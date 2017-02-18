@@ -1,8 +1,20 @@
-
-.navButton {
-  width: 150px;
-  height: 75px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+#navUl {
+  float: left;
+  display: block;
+  background-color: #333;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+}
+
 .mainImg {
   width: 500px;
   height: 500px;
@@ -11,14 +23,11 @@
   /*background-image:*/
   background-repeat: no-repeat;
 }
-.button {
-  width: 100px;
-  height: 70px;
-}
-divMain {
+
+.divMain {
   background-color: #333;
 }
-div.scrollmenu {
+/*div.scrollmenu {
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
@@ -32,4 +41,4 @@ div.scrollmenu a {
 }
 div.scrollmenu a:hover {
   background-color: #777;
-}
+}*/

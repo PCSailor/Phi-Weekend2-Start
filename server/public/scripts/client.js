@@ -16,8 +16,9 @@ $(document).ready(function(){
       // NOTE: Successful to the DOM with appendDOM(data.phirephiters[1]);
       for (var i = 0; i < data.phirephiters.length; i++) {
         appendDOM(data.phirephiters[i]);
+            console.log(appendDOM(data.phirephiters[i]));
       }
-      console.log(appendDOM(data.phirephiters[11]));
+
 
       // QUESTION: How do you get one piece of info off the server? i.e.:  Object=phirephiters Array[0] / Object  Name ??  // NOTE: $('.test').data.phirephiters.name;   // test();
       // } // NOTE: FOR: function test(){
@@ -25,15 +26,30 @@ $(document).ready(function(){
     }); // NOTE: FOR: $.ajax({
 
       var test01 = function(){
-        $('.test').text('list-02');} // Appends to DOM
+        $('.listFoot').text('list-02');} // Appends to DOM
         test01(); // NOTE: Calls appends to DOM function
-              
-        function appendDOM(divPeople) { // anyFunctionName
-          $('#divMain').append('<div class="divPeople"></div>');
+
+        function appendDOM(ulPeople) { // anyFunctionName
+          $('#divMain').append('<ul class="ulPeople"></ul>');
           var $addKeys = $('#divMain').children().last();
-          $addKeys.append('<li>' + divPeople.name + '</li>');
-          $addKeys.append('<li>' + divPeople.git_username + '</li>')
+          $addKeys.append('<li>' + ulPeople.name + '</li>');
+          $addKeys.append('<li>' + ulPeople.git_username + '</li>');
+          // $addKeys.append('<li>' + ulPeople.shoutout + '</li>');
+          $addKeys.append('<li>' + ulPeople.shoutout + '</li>');
         }
+        $('#divMain:eq()').hide(); // css('color', 'red');
+        $('#divMain:eq()').show();
+        $('li').eq(5).css('background-color', 'red');
+        $('body').find('div').eq(2).addClass('blue');
+
+        // NOTE: This is working and appending list to DOM
+        // function appendDOM(divPeople) { // anyFunctionName
+        //   $('#divMain').append('<div class="divPeople"></div>');
+        //   var $addKeys = $('#divMain').children().last();
+        //   $addKeys.append('<li>' + divPeople.name + '</li>');
+        //   $addKeys.append('<li>' + divPeople.git_username + '</li>')
+        //   $addKeys.append('<li>' + divPeople.shoutout + '</li>')
+        // }
         // NOTE: Adding a single picture
         // $('<img src=" '+ imgPath + '">').load(function(){
         // $('<img src="'+ $HOME/Desktop/Fox Picture 003.jpg + '">').load(function(){
