@@ -12,7 +12,7 @@ ul {
 background-color: #000000;
   /*display: inline;*/
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   justify-content: center;
   align-items: center;
 
@@ -27,15 +27,21 @@ background-color: #000000;
 }
 
 #backButton {
+  margin: 5px;
+  margin-right: 25px;
   float: left;
   width: 100px;
-  height: 50px;
+  height: 75px;
 }
 
+
+
 #fwdButton {
+  margin: 5px;
+  margin-left: 25px;
   float: right;
   width: 100px;
-  height: 50px;
+  height: 75px;
 }
 
 #mainImg {
