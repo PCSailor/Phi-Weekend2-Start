@@ -1,3 +1,5 @@
+/* QUESTION: Why consistently saying "Dont use IDs in selectors"?  */
+
 body {
   position: relative;
 }
@@ -9,7 +11,7 @@ ul {
 }
 /*#navigation #mainImg #backButton #fwButton  {*/
 #navigation {
-background-color: #000000;
+background-color: gray;
   /*display: inline;*/
   display: flex;
   /*flex-direction: column;*/

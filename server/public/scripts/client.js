@@ -41,10 +41,17 @@ $(document).ready(function(){
     $addDivMain.append('<li>' + ulPeople.name + '</li>');
     $addDivMain.append('<li>' + ulPeople.git_username + '</li>');
     $addDivMain.append('<li>' + ulPeople.shoutout + '</li>');
+    console.log(phirephitersArray[3].name);
+    var htmlNavAaccess = document.getElementById('mainImg');
+    // console.log(htmlNavAaccess);
+
+// QUESTION: How to access thhee NodeList Object? (list of nodes, like an HTML element's collection of child nodes.)
     //   $('#fwdButton').on('click', function() {
     // }) // NOTE: FOR: $('#fwdButton').on('click', function() {
+
     for (var i = 0; i < phirephitersArray.length; i++) {
-      $('#mainImg').replaceWith().phirephitersArray[i]
+    $(htmlNavAaccess).mainImg().replaceWith(phirephitersArray[3]);
+      // .replaceWith = HTML string, DOM element, array of DOM elements, or jQuery object.
     } // NOTE: FOR for loop
     // console.log($addDivMain); // Returning successfully
     // $addDivBottom.append('<li>' + phirephitersArray[3] + '</li>'); DELETE? // NOTE: This runs through for Loop
