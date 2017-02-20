@@ -28,29 +28,28 @@ background-color: gray;
   /*transform: perspective(1px) translateY(-50%);*/ /*http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
 }
 
-#backButton {
+.button {
   margin: 5px;
-  margin-right: 25px;
-  float: left;
   width: 100px;
   height: 75px;
 }
 
-
+#backButton {
+  margin-left: 25px;
+  float: left;
+}
 
 #fwdButton {
-  margin: 5px;
-  margin-left: 25px;
+  margin-right: 25px;
   float: right;
-  width: 100px;
-  height: 75px;
 }
 
-#mainImg {
-  width: auto;
-  height: auto;
+#main {
+  width: 300px;
+  height: 200px;
   margin: 5px;
   padding: 0px;
+  background-color: red;
   /*background-image:*/
   background-repeat: no-repeat;
 }
