@@ -49,9 +49,13 @@ background-color: gray;
   height: 200px;
   margin: 5px;
   padding: 0px;
-  background-color: red;
-  /*background-image:*/
-  background-repeat: no-repeat;
+  background-color: gray;
+  font-weight: bold;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 .divMain {
